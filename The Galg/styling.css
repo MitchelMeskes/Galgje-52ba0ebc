@@ -1,0 +1,89 @@
+body {
+    background-image: url("https://jooinn.com/images/black-leather-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    border-radius: 18px;
+    border: 3px solid rgba(60, 57, 59, 0.62);
+    border-bottom-color: #3c393b;
+    border-top-color: #3c393b;
+    border-inline-color: #575456;
+    width: 97%;
+    height: 590px;
+    background-color: rgb(0, 0, 0);
+}
+
+a {
+    background-image: url("https://us.123rf.com/450wm/backgroundcreator/backgroundcreator1808/backgroundcreator180807466/107020995-black-stone-texture-background.jpg?ver=6");
+    margin: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    border: 2px solid #575456;
+    border-radius: 30px;
+    padding: 10px 7px;
+    background-color: #3c393b;
+    color: rgba(92, 90, 92, 0.62);
+}
+
+h1 {
+    background-image: url("https://us.123rf.com/450wm/backgroundcreator/backgroundcreator1808/backgroundcreator180807466/107020995-black-stone-texture-background.jpg?ver=6");
+    margin-top: 10%;
+    margin-left: 35%;
+    text-align: center;
+    border: 2px solid #575456;
+    border-radius: 30px;
+    padding: 5px 5px;
+    background-color: #3c393b;
+    color: rgba(92, 90, 92, 0.62);
+}
+
+h3 {
+    background-image: url("https://us.123rf.com/450wm/backgroundcreator/backgroundcreator1808/backgroundcreator180807466/107020995-black-stone-texture-background.jpg?ver=6");
+    margin-left: 36%;
+    text-align: center;
+    border: 2px solid #575456;
+    border-radius: 30px;
+    padding: 5px 5px;
+    background-color: #3c393b;
+    width: 290px;
+    color: rgba(92, 90, 92, 0.62);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: rgb(92, 90, 92);
+    border-color: rgb(22, 21, 21);
+}
+input{
+    background-image: url("https://us.123rf.com/450wm/backgroundcreator/backgroundcreator1808/backgroundcreator180807466/107020995-black-stone-texture-background.jpg?ver=6");
+    text-align: center;
+    border: 2px solid #575456;
+    border-radius: 30px;
+    padding: 10px 7px;
+    background-color: #3c393b;
+    color: rgba(92, 90, 92, 0.62);
+}
+.middle{
+    text-align: center;
+    width: 350px;
+}
+.title{
+    text-align: center;
+    width: 310px;
+}
