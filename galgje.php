@@ -21,92 +21,92 @@
     $gameWord = $_SESSION["gameWord"];
 
     //check gebruiker input
-    if (isset($_POST["playerInput"])) {
+if (isset($_POST["playerInput"])) {
         $playerInput = $_POST["playerInput"];
         $guessedGameWord = $_SESSION["guessedGameWord"];
         $score = $_SESSION["score"];
         $wrongGuess = $_SESSION["wrongGuess"];
 
         //goed geraden
-        if (strpos($gameWord, $playerInput) !== false) {
+    if (strpos($gameWord, $playerInput) !== false) {
             $index = strpos($gameWord, $playerInput);
             $guessedGameWord[$index] = $playerInput;
             //check of je gewonnen hebt
-            if (!in_array("_", $guessedGameWord)) {
+        if (!in_array("_", $guessedGameWord)) {
                 echo "Je Hebt Gewonnen <pre>";
                 echo "<a href='startpagina.php'>speel opnieuw</a> <pre>";
-            }
-        } else {
+        }
+    } else {
             //als fout gegokt +1
             $score++;
             array_push($wrongGuess, $playerInput);
 
             //je hebt verloren
-            if ($score === 10) {
+        if ($score === 10) {
                 echo "Jammer je hebt een smurft gedood <pre>";
                 echo "<a href='startpagina.php'>speel opnieuw</a> <pre>";
                 echo "het goeden woord was: $gameWord <pre>";
-            }
         }
-    } else {
+    }
+} else {
         //alleen eerste keer
         $lengthGameWord = strlen($gameWord);
         $guessedGameWord = array_fill(0, $lengthGameWord, "_");
         $score = 0;
         $wrongGuess = array();
-    }
+}
 
     //print het gegokten woord
-    foreach ($guessedGameWord as $index => $character) {
+foreach ($guessedGameWord as $index => $character) {
         echo "$character ";
-    }
+}
     // print fout gegokt
         echo "<pre>";
         echo "Wrong Guesses:";
-    foreach ($wrongGuess as $index => $character) {
+foreach ($wrongGuess as $index => $character) {
         echo "$character ";
-    }
+}
     echo "<pre>";
 
     //plaatjes laten zien
     switch ($score) {
-        case 0:
+case 0:
             break;
-        case 1:
+case 1:
         echo "<img src= 'image/galgje1.jpeg'>";
             break;
-        case 2:
+case 2:
         echo "<img src= 'image/galgje2.jpeg'>";
             break;
-        case 3:
+case 3:
         echo "<img src= 'image/galgje3.jpeg'>";
             break;
-        case 4:
+case 4:
         echo "<img src= 'image/galgje4.jpeg'>";
             break;
-        case 5:
+case 5:
         echo "<img src= 'image/galgje5.jpeg'>";
             break;
-        case 6:
+case 6:
         echo "<img src= 'image/galgje6.jpeg'>";
             break;
-        case 7:
+case 7:
         echo "<img src= 'image/galgje7.jpeg'>";
             break;
-        case 8:
+case 8:
         echo "<img src= 'image/galgje8.jpeg'>";
             break;
-        case 9:
+case 9:
         echo "<img src= 'image/galgje9.jpeg'>";
             break;
-        case 10:
+case 10:
         echo "<img src= 'image/galgje10.jpeg'>";
             break;
     }
     $_SESSION["guessedGameWord"] = $guessedGameWord;
     $_SESSION["score"] = $score;
     $_SESSION["wrongGuess"] = $wrongGuess;
-?>
+    ?>
 
   </body>
 </html>
