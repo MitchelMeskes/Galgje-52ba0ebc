@@ -25,7 +25,7 @@
         "place","visual","nightmare",
         "shark","car","consultation","glare");
 
-        $index = rand(0 ,count($gameWord)-1);
+        $index = rand(0, count($gameWord)-1);
         $_SESSION["gameWord"] = $gameWord[$index];
 
         ?>
